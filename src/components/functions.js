@@ -38,7 +38,12 @@ export function showResume () {
     header.after(Resume());
   }
 }
-
+/*
+Below function handles the responsiveness of the site in relation to the current
+viewport width. Currently only handles the resume page. I will be back to give the
+Portfolio page some love. This function should really be broken down into smaller 
+bits for readability.
+*/
 export function resizeEventListener() {
   if (window.innerWidth < 1155 && sizeState != 9) {
     const resumeBody = document.querySelector('#resume-body');
@@ -65,6 +70,7 @@ export function resizeEventListener() {
     btnList.forEach(btn => btn.style.fontSize = "1.1rem")
   } else if (window.innerWidth >= 720 && sizeState === 3) {
     const skillsWrapper = document.querySelector('#skills-wrapper');
+    const btnList = document.querySelectorAll('.nav-button');
 
     const skill3 = document.querySelector('#skill-3');
     const skill6 = document.querySelector('#skill-6')
@@ -81,6 +87,7 @@ export function resizeEventListener() {
 
     skillsWrapper.style.gridTemplate = "1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr"
     infoContainer.style.gridTemplate = "1fr 1fr / 1fr 1fr";
+    btnList.forEach(btn => btn.style.fontSize = "1.7rem")
   }
 
   //Handle sizeState once per resize
