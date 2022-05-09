@@ -1,5 +1,10 @@
+import toggleContact from './functions.js';
+
 const Contact = () => {
   const contactEle = document.createElement('div');
+
+  const contactX = document.createElement('div');
+  contactX.addEventListener("click", toggleContact);
 
   const contactTitle = document.createElement('div');
   const contactGrid = document.createElement('div');
@@ -19,6 +24,9 @@ const Contact = () => {
 
   contactEle.id = "contact-container";
   contactEle.style.visibility = "hidden";
+
+  contactX.id = "contact-x";
+  contactX.textContent = "X";
 
   contactTitle.id = "contact-title";
   contactTitle.textContent = "Contact";
@@ -56,7 +64,7 @@ const Contact = () => {
 
   contactGrid.append(emailLabel, emailContent, phoneLabel, phoneContent, socialLabel, socialList);
 
-  contactEle.append(contactTitle, contactGrid);
+  contactEle.append(contactX, contactTitle, contactGrid);
 
   return contactEle;
 }

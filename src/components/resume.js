@@ -8,8 +8,8 @@ const Resume = () => {
   const name = "Robin Gerrish";
   const email = "robinsgerrish@gmail.com";
   const phone = "610-413-6063";
-  const github = "github.com/RSGerrish";
-  const linkedin = "linkedin.com/in/robingerrish";
+  const github = "https://github.com/RSGerrish";
+  const linkedin = "https://linkedin.com/in/robingerrish";
 
   const summary1 = "Composite Engineer from the racing, aerospace and defense industries with strong desire to pursue a career in software or web development";
   const summary2 = "Developed key general skills in past positions  such as management, customer service, strong communication and logical problem solving";
