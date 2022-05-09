@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+/*
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Exo', sans-serif;
+font-family: 'Varela', sans-serif;
+*/
+
+html {
+  min-height: 100vh;
+  font-size: 15px;
+  font-family: 'Varela', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(31, 31, 32);
+  min-height: 70px;
+  min-width: 100%;
+  color: white;
+  font-family: 'Ubuntu', san-serif;
+}
+
+#header-wrapper {
+  display: grid;
+  grid-template: 1fr / 1fr 2fr 1fr;
+  width: 100%;
+  max-width: 1080px;
+}
+
+#nav-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.nav-button {
+  border: none;
+  background-color:rgb(70, 70, 75);
+  padding: 0.25rem 1rem;
+  font-family: 'Exo', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  color:rgb(218, 218, 224);
+}
+
+.nav-button:hover{
+  color:rgb(43, 108, 192);
+  cursor:pointer;
+}
+
+.nav-button:active {
+  transform: scale(0.95);
+}
+
+#msg-container {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color:rgb(218, 218, 224);
+}
+
+a:hover {
+  color:rgb(43, 108, 192);
+}
+
+li {
+  list-style: none;
+}
+
+#site-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#resume-body {
+  max-width: 1080px;
+  min-width: 280px;
+  box-shadow: 0 0 0.5rem black;
+  padding: 2rem;
+}
+
+#user-name {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3.5rem;
+}
+
+#info-container {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.info-element {
+  padding: 0 1rem;
+}
+
+.sum-item {
+  font-family: 'Varela', sans-serif;
+  font-size: 1rem;
+}
+
+.section-title {
+  margin-top: 1.5rem;
+  font-family: 'Exo', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  padding-left: 0.25rem;
+}
+
+#skills-position {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+}
+
+#skills-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+  width: 85%;
+}
+
+.edex-section {
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+.section-opener {
+  font-size: 1.4rem;
+  padding-left: 0.5rem;
+}
+
+.section-header {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+}
+
+.date-range {
+  padding-left: 0.5rem;
+}
+
+.section-description {
+  padding-left: 0.5rem;
+}
+
+#contact-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color:rgba(70, 70, 75, 0.98);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-decoration: none;
+  color:rgb(218, 218, 224);
+  border-top-color: rgb(43, 108, 192);
+  border-top-width: 1.5rem;
+  border-top-style: solid;
+  box-shadow: 0 0 0.75rem black;
+}
+
+.contact-container-hide {
+  visibility: hidden;
+}
+
+#contact-title {
+  margin-top: 0.5rem;
+  font-family: 'Exo', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  padding-left: 0.25rem; 
+}
+
+#contact-grid {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 2fr;
+}
+
+.contact-label {
+  text-align: right;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.contact-content {
+  margin-top: 1rem;
+}
+
+#social-list {
+  margin-top: 1rem;
+  padding: 0;
+}
