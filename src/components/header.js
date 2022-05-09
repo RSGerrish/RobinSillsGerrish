@@ -1,4 +1,4 @@
-import toggleContact from './functions.js';
+import toggleContact, { showPortfolio } from './functions.js';
 
 const Header = () => {
   const headerEle = document.createElement('header');
@@ -28,6 +28,7 @@ const Header = () => {
   btnContact.addEventListener("click", toggleContact);
   btnPortfolio.className = "nav-button";
   btnPortfolio.textContent = "Portfolio";
+  btnPortfolio.addEventListener("click", showPortfolio)
 
   navContainer.append(btnContact, btnPortfolio)
 

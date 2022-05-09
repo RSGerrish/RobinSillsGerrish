@@ -16,6 +16,7 @@ html {
 
 body {
   margin: 0;
+  height: 100vh;
 }
 
 header, footer {
@@ -75,21 +76,20 @@ a:hover {
   color:rgb(43, 108, 192);
 }
 
-li {
-  list-style: none;
-}
-
 #site-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 
 #resume-body {
   max-width: 1080px;
   min-width: 280px;
+  width: 100%;
   box-shadow: 0 0 0.5rem black;
   padding: 2rem;
+  min-height: calc(100vh - 140px);
 }
 
 #user-name {
@@ -171,10 +171,7 @@ li {
   border-top-width: 1.5rem;
   border-top-style: solid;
   box-shadow: 0 0 0.75rem black;
-}
-
-.contact-container-hide {
-  visibility: hidden;
+  max-width: 390px;
 }
 
 #contact-title {
@@ -204,4 +201,97 @@ li {
 #social-list {
   margin-top: 1rem;
   padding: 0;
+}
+
+.social-item {
+  list-style: none;
+}
+
+#portfolio-body {
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 140px);
+}
+
+#port-grid {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template: 1fr / 1fr;
+  max-width: 1080px;
+  gap: 3rem;
+  padding: 2rem;
+  text-decoration: none;
+  color:rgb(218, 218, 224);
+}
+
+#port-grid>a:hover {
+  color:rgb(218, 218, 224);
+}
+
+.port-card {
+  max-width: 880px;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem black;
+  overflow: hidden;
+  border-left: 3rem solid rgb(31, 31, 32);
+}
+
+#memory-card-game {
+  background-image: url('./assets/portfolio-matching-game.png');
+}
+
+#tdd-practice {
+  background-image: url('./assets/portfolio-tdd.png');
+}
+
+#todo-project {
+  background-image: url('./assets/portfolio-todo-project.png');
+}
+
+#restaurant-project {
+  background-image: url('./assets/portfolio-restaurant-project.png');
+}
+
+#weather-app {
+  background-image: url('./assets/portfolio-weather-app.png');
+}
+
+.port-gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0.25turn, rgba(255, 255, 255, 0), rgba(31, 31, 32, 1) 35%);
+}
+
+.port-name, .port-desc, .port-directions {
+  margin: 0.5rem 0;
+  margin-left: 20rem;
+  padding-right: 2rem;
+}
+
+.port-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0;
+  padding-top: 1rem;
+}
+
+.port-directions {
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+.port-git {
+  background-color:rgb(70, 70, 75);
+  border-radius: 0.75rem;
+  color:rgb(43, 108, 192);
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+  margin-left: 20rem;
+}
+
+.port-desc {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
