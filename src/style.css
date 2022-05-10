@@ -343,3 +343,23 @@ a:hover {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
 }
+
+@media (max-width: 1155px) {
+  #resume-body {
+    padding: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  #skills-wrapper{
+    grid-template: repeat(3, 1fr) / repeat(5, 1fr);
+  }
+
+  #info-container {
+    grid-template: repeat(4, 1fr) / 1fr;
+  }
+
+  .nav-button {
+    font-size: 1.1rem;
+  }
+}

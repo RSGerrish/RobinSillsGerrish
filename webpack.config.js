@@ -13,6 +13,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Robin Sills Gerrish',
+      template: './src/index.html',
     }),
   ],
   output: {
