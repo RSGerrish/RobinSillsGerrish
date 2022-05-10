@@ -6,7 +6,7 @@ import ResumeExperience from './res-experience.js';
 
 const Resume = () => {
   const name = "Robin Gerrish";
-  const email = "robinsgerrish@gmail.com";
+  const email = "robin@RobinSillsGerrish.com";
   const phone = "610-413-6063";
   const github = "https://github.com/RSGerrish";
   const linkedin = "https://linkedin.com/in/robingerrish";

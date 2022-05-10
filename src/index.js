@@ -3,6 +3,7 @@ import Header from './components/header.js';
 import Footer from './components/footer.js';
 import Resume from './components/resume.js';
 import Contact from './components/contact.js';
+import { initialLoad } from './components/functions.js';
 
 function component() {
   const element = document.createElement('div');
@@ -15,3 +16,4 @@ function component() {
 }
 
 document.body.appendChild(component());
+initialLoad();
