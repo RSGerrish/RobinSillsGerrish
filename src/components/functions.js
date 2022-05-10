@@ -48,9 +48,13 @@ export function resizeEventListener() {
 
   if (window.innerWidth < 720 && sizeState != 3) {
     const nodeList = document.querySelectorAll('#skills-wrapper>div');
+    const skill3 = document.querySelector('#skill-3');
+    const skill6 = document.querySelector('#skill-6');
 
-    nodeList[5].remove();
-    nodeList[11].remove();
+    if (skill3 && skill6) {
+      nodeList[5].remove();
+      nodeList[11].remove();
+    }
   } else if (window.innerWidth >= 720 && sizeState === 3) {
     const skillsWrapper = document.querySelector('#skills-wrapper');
     const skill3 = document.querySelector('#skill-3');
