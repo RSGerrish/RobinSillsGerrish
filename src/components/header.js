@@ -14,9 +14,6 @@ const Header = () => {
   const btnContact = document.createElement('button');
   const btnPortfolio = document.createElement('button');
 
-  //Put a resize event listener on the window
-  window.addEventListener("resize", resizeEventListener);
-
   headerWrapper.id = "header-wrapper";
 
   logoContainer.id = "logo-container";
