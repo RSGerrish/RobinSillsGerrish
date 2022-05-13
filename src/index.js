@@ -4,14 +4,17 @@ import Footer from './components/footer.js';
 import Resume from './components/resume.js';
 import Contact from './components/contact.js';
 import Lander from './components/lander.js';
+import Portfolio from './components/portfolio.js';
 import ResAnchorSpace from './components/resanchorspace.js';
+import PortAnchorSpace from './components/portanchorspace.js';
+import TopAnchorSpace from './components/topanchorspace.js';
 
 function component() {
   const element = document.createElement('div');
 
   element.id = 'site-container';
 
-  element.append(Contact(), Header(), Lander(), ResAnchorSpace(), Resume(), Footer());
+  element.append(Contact(), Header(), TopAnchorSpace(), Lander(), ResAnchorSpace(), Resume(), PortAnchorSpace(), Portfolio(), Footer());
 
   return element;
 }

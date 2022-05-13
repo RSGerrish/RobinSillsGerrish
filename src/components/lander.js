@@ -63,7 +63,7 @@ const Lander = () => {
   aboutTitle.textContent = "Composite Engineer and Lifelong Programmer"
 
   aboutText.id = "about-text";
-  aboutText.textContent = "Looking To Take His Skills To An Entry Level Front End Web Development Position";
+  aboutText.textContent = "Looking To Take His Skills To An Entry Level Front End Development Position";
 
   aboutBD.id = "about-bd";
 
