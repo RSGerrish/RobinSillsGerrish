@@ -23,7 +23,7 @@ const Contact = () => {
   const socialItem2 = document.createElement('li');
 
   contactEle.id = "contact-container";
-  contactEle.style.visibility = "hidden";
+  //contactEle.style.visibility = "hidden";
 
   contactX.id = "contact-x";
   contactX.textContent = "X";

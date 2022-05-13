@@ -7,10 +7,10 @@ export default function toggleContact () {
   const contactEle = document.querySelector('#contact-container');
 
   if(contactEle) {
-    if(contactEle.style.visibility === "visible") {
-      contactEle.style.visibility = "hidden";
+    if(contactEle.classList.contains("visible")) {
+      contactEle.classList.remove("visible");
     } else {
-      contactEle.style.visibility = "visible";
+      contactEle.classList.add("visible");
     }
   }
 };

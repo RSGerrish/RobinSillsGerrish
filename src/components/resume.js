@@ -62,7 +62,7 @@ const Resume = () => {
   const resumeEle = document.createElement('div');
 
   resumeEle.id = "resume-body";
-
+  
   resumeEle.appendChild(ResumeHead(name, email, phone, github, linkedin));
   resumeEle.appendChild(ResumeSummary(summary1, summary2, summary3, summary4));
   resumeEle.appendChild(ResumeSkills(skills));
