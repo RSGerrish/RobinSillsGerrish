@@ -1,4 +1,4 @@
-import toggleContact, { showPortfolio, showResume, resizeEventListener } from './functions.js';
+import toggleContact from './functions.js';
 
 const Header = () => {
   const headerEle = document.createElement('header');

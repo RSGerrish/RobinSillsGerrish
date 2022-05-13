@@ -200,12 +200,11 @@ a:hover {
 
 #about-text {
   position: absolute;
-  min-height: 10rem;
   width: clamp(345px, 60vw, 1000px);
   color:rgb(70, 70, 75);
   z-index: 5;
   text-align: center;
-  font-size: clamp(1rem, calc(100vw / 52), 1.4rem);
+  font-size: clamp(0.8rem, calc(100vw / 52), 1.4rem);
   font-weight: 200;
   transform: translateX(-100vw) translateY(15rem);
   animation: translate-right-about 1s linear 2s 1 forwards;
@@ -214,12 +213,11 @@ a:hover {
 
 #about-title {
   position: absolute;
-  min-height: 10rem;
-  width: clamp(355px, 60vw, 1000px);
+  width: clamp(375px, 60vw, 1000px);
   color:rgb(70, 70, 75);
   z-index: 5;
   text-align: center;
-  font-size: clamp(1.2rem, calc(100vw / 46), 1.5rem);
+  font-size: clamp(0.9rem, calc(100vw / 46), 1.65rem);
   font-weight: 500;
   transform: translateX(100vw) translateY(20rem);
   animation: translate-left-about 1s linear 2s 1 forwards;
@@ -240,7 +238,7 @@ a:hover {
   position: absolute;
   font-size: 4rem;
   transform: translateY(-100vh) translateX(10rem);
-  z-index: 10;
+  z-index: 9;
   animation: translate-down 1s cubic-bezier(0.075, 0.82, 0.165, 1) 2s 1 forwards;
 }
 
@@ -664,7 +662,7 @@ a:hover {
   }
   
   to {
-    transform: translateX(-3rem) translateY(25rem);
+    transform: translateX(-4rem) translateY(22rem);
   }
 }
 
@@ -694,7 +692,7 @@ a:hover {
   }
   
   to {
-    transform: translateY(28rem) translateX(2rem);
+    transform: translateX(2rem) translateY(25rem);
   }
 }
 
