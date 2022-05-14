@@ -12,6 +12,7 @@ const Header = () => {
   const headerLogo = document.createElement('div');
   const headerMsg = document.createElement('div');
 
+  const linkContact = document.createElement('a');
   const btnContact = document.createElement('div');
   const linkPortfolio = document.createElement('a');
   const btnPortfolio = document.createElement('div');
@@ -33,9 +34,11 @@ const Header = () => {
   
   msgContainer.appendChild(headerMsg);
   
+  linkContact.href = "#contact";
+  linkContact.id = "link-contact";
   btnContact.className = "nav-button";
   btnContact.textContent = "Contact";
-  btnContact.addEventListener("click", toggleContact);
+  linkContact.appendChild(btnContact);
 
   linkPortfolio.href = "#portfolio";
   linkPortfolio.id = "link-portfolio";
@@ -43,7 +46,7 @@ const Header = () => {
   btnPortfolio.textContent = "Portfolio";
   linkPortfolio.appendChild(btnPortfolio);
 
-  navContainer.append(btnContact, linkPortfolio)
+  navContainer.append(linkContact, linkPortfolio)
 
   headerWrapper.append(logoContainer, msgContainer, navContainer);
 
