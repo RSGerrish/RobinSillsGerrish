@@ -140,6 +140,10 @@ a:hover {
   transition: all 0.25s ease-in-out;
 }
 
+#name-wrapper {
+  transform: translateY(-6rem);
+}
+
 .name-container {
   width: clamp(320px, 60vw, 1000px);
 }
@@ -183,7 +187,7 @@ a:hover {
   text-align: center;
   font-size: clamp(3rem, calc(100vw / 15), 8rem);
   font-weight: 200;
-  animation: hide-element 1s linear 1s 1 forwards;
+  animation: hide-element 1.5s linear 1s 1 forwards;
 }
 
 #name-bd1 {
@@ -234,21 +238,44 @@ a:hover {
   animation: translate-left-aboutbd 1s cubic-bezier(0.075, 0.82, 0.165, 1) 2s 1 forwards;
 }
 
+#shape-horizontal {
+  position: absolute;
+  background-color:rgb(43, 108, 192);
+  height: clamp(7.5rem, 16vw, 10.5rem);
+  width: 60vw;
+  z-index: 3;
+  transform: translateX(-100vw);
+  animation: translate-right-sh 1.25s cubic-bezier(0.165, 0.84, 0.44, 1) 2s 1 forwards;
+}
+
+#shape-vertical {
+  position: absolute;
+  background-color:rgb(70, 70, 75);
+  height: clamp(320px, 75vh, 670px);
+  width: clamp(7.25rem, 13vw, 9rem);
+  z-index: 2;
+  transform: translateY(-100vh);
+  animation: translate-down 1.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s 1 forwards;
+}
+
 #see-more {
   position: absolute;
-  font-size: 4rem;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 100;
   transform: translateY(-100vh) translateX(10rem);
   z-index: 9;
   animation: translate-down 1s cubic-bezier(0.075, 0.82, 0.165, 1) 2s 1 forwards;
 }
 
-#btn-see-more:hover {
-  filter: invert(34%) sepia(88%) saturate(860%) hue-rotate(184deg) brightness(91%) contrast(86%);
-}
-
 #btn-see-more {
   width: 5rem;
   height: 5rem;
+  filter: invert(100%) sepia(0%) saturate(2359%) hue-rotate(230deg) brightness(98%) contrast(100%);
+}
+
+#see-more:hover {
+  filter: invert(34%) sepia(88%) saturate(860%) hue-rotate(184deg) brightness(91%) contrast(86%);
 }
 
 #resume-body {
@@ -350,12 +377,13 @@ a:hover {
   text-decoration: none;
   color:rgb(218, 218, 224);
   border-top-color: rgb(43, 108, 192);
+  padding-bottom: 1rem;
 }
 
 #contact-title {
   margin-top: 1rem;
   font-family: 'Exo', sans-serif;
-  font-size: 2.3rem;
+  font-size: 2.8rem;
   font-weight: 700;
   padding-left: 0.25rem; 
 }
@@ -446,23 +474,23 @@ a:hover {
 }
 
 #memory-card-game {
-  background-image: url('./assets/portfolio-matching-game.webp');
+  background-image: url('../assets/portfolio-matching-game.webp');
 }
 
 #tdd-practice {
-  background-image: url('./assets/portfolio-tdd.webp');
+  background-image: url('../assets/portfolio-tdd.webp');
 }
 
 #todo-project {
-  background-image: url('./assets/portfolio-todo-project.webp');
+  background-image: url('../assets/portfolio-todo-project.webp');
 }
 
 #restaurant-project {
-  background-image: url('./assets/portfolio-restaurant-project.webp');
+  background-image: url('../assets/portfolio-restaurant-project.webp');
 }
 
 #weather-app {
-  background-image: url('./assets/portfolio-weather-app.webp');
+  background-image: url('../assets/portfolio-weather-app.webp');
 }
 
 .port-gradient {
@@ -548,6 +576,14 @@ a:hover {
 }
 
 @media (max-width: 720px) {
+  #shape-vertical {
+    animation: translate-down-mini 1.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s 1 forwards;
+  }
+
+  #see-more {
+    animation: translate-down-mini 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s 1 forwards;
+  }
+
   #info-container {
     grid-template: repeat(4, 1fr) / 1fr;
   }
@@ -607,6 +643,33 @@ a:hover {
     margin-top: 2rem;
     transition: all 0.25s ease-in-out;
   }
+
+  #direct-grid {
+    margin-top: 1rem;
+  }
+
+  #social-container {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-button {
+    font-size: 1.1rem;
+    transition: all 0.25s linear;
+    margin-right: 0;
+  }
+
+  #lander-body {
+    width: 86vw;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .back-drop {
+    width: 100vw;
+    left: 0;
+    text-align: center;
+  }
 }
 
 @media (max-width: 500px) {
@@ -630,19 +693,12 @@ a:hover {
     transition: all 0.25s ease-in-out;
   }
 
-  #lander-body {
-    width: 86vw;
-    transition: all 0.25s ease-in-out;
-  }
-
-  .back-drop {
-    width: 100vw;
-    left: 0;
-    text-align: center;
-  }
-
   .name-container {
     width: 100%;
+  }
+
+  .nav-button {
+    padding-left: 0;
   }
 }
 
@@ -659,21 +715,21 @@ a:hover {
 
 @keyframes translate-left-about {
   from {
-    transform: translateX(100vw) translateY(20rem);
+    transform: translateX(100vw) translateY(14rem);
   }
   
   to {
-    transform: translateX(-4rem) translateY(22rem);
+    transform: translateX(-4rem) translateY(16rem);
   }
 }
 
 @keyframes translate-left-aboutbd {
   from {
-    transform: translateX(100vw) translateY(23rem);
+    transform: translateX(100vw) translateY(17.2rem);
   }
   
   to {
-    transform: translateX(0rem) translateY(23.2rem);
+    transform: translateX(0rem) translateY(17.2rem);
   }
 }
 
@@ -689,11 +745,11 @@ a:hover {
 
 @keyframes translate-right-about {
   from {
-    transform: translateX(-100vw) translateY(15rem);
+    transform: translateX(-100vw) translateY(9rem);
   }
   
   to {
-    transform: translateX(2rem) translateY(25rem);
+    transform: translateX(2rem) translateY(19rem);
   }
 }
 
@@ -719,10 +775,30 @@ a:hover {
 
 @keyframes translate-down {
   from {
+    transform: translateY(-100vh) translateX(18rem);
+  }
+
+  to {
+    transform: translateY(0) translateX(18rem);
+  }
+}
+
+@keyframes translate-down-mini {
+  from {
     transform: translateY(-100vh) translateX(10rem);
   }
 
   to {
     transform: translateY(0) translateX(10rem);
+  }
+}
+
+@keyframes translate-right-sh {
+  from {
+    transform: translateX(-100vw) translateY(17.2rem);
+  }
+
+  to {
+    transform: translateX(0rem) translateY(17.2rem);
   }
 }

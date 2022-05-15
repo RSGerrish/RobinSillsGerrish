@@ -16,6 +16,8 @@ const Header = () => {
   const btnContact = document.createElement('div');
   const linkPortfolio = document.createElement('a');
   const btnPortfolio = document.createElement('div');
+  const linkResume = document.createElement('a');
+  const btnResume = document.createElement('div');
 
   headerWrapper.id = "header-wrapper";
 
@@ -46,7 +48,13 @@ const Header = () => {
   btnPortfolio.textContent = "Portfolio";
   linkPortfolio.appendChild(btnPortfolio);
 
-  navContainer.append(linkContact, linkPortfolio)
+  linkResume.href = "#resume";
+  linkResume.id = "link-resume";
+  btnResume.className = "nav-button";
+  btnResume.textContent = "Resume";
+  linkResume.appendChild(btnResume);
+
+  navContainer.append(linkResume, linkPortfolio, linkContact)
 
   headerWrapper.append(logoContainer, msgContainer, navContainer);
 

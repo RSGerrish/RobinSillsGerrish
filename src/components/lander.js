@@ -68,19 +68,34 @@ const Lander = () => {
   aboutBD.id = "about-bd";
 
   const linkSeeMore = document.createElement('a');
+  const btnTextRead = document.createElement('div');
+  const btnTextMore = document.createElement('div');
   const btnSeeMore = document.createElement('img');
+  const shapeHoriz = document.createElement('div');
+  const shapeVert = document.createElement('div');
 
   linkSeeMore.href = "#resume";
   linkSeeMore.id = "see-more";
+
+  btnTextRead.textContent = "READ";
+  btnTextRead.id = "btn-text-read";
+  btnTextRead.className = "btn-text";
+
+  btnTextMore.textContent = "MORE";
+  btnTextMore.id = "btn-text-more";
+  btnTextMore.className = "btn-text";
 
   btnSeeMore.src = DownArrow;
   btnSeeMore.title = "Read more about me below";
   btnSeeMore.id = "btn-see-more";
 
-  linkSeeMore.appendChild(btnSeeMore);
+  shapeHoriz.id = "shape-horizontal";
+  shapeVert.id = "shape-vertical";
+
+  linkSeeMore.append(btnTextRead, btnSeeMore, btnTextMore);
 
   landerEle.id = "lander-body";
-  landerEle.append (nameWrapper, aboutTitle, aboutText, aboutBD, linkSeeMore);
+  landerEle.append (nameWrapper, aboutTitle, aboutText, aboutBD, linkSeeMore, shapeHoriz, shapeVert);
 
   return landerEle;
 }

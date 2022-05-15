@@ -1,4 +1,4 @@
-import './style.css';
+import './styles/style.css';
 import Header from './components/header.js';
 import Footer from './components/footer.js';
 import Resume from './components/resume.js';
@@ -26,8 +26,6 @@ function handleScroll() {
   const header = document.querySelector("header");
   const landerEle = document.querySelectorAll("name-ele");
   const windowHeight = window.innerHeight;
-
-  console.log(landerBody.getBoundingClientRect().top);
 
   if (landerBody.getBoundingClientRect().top < - 70) {
     header.classList.add("scroll");
