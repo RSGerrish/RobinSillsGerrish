@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+/*
+font-family: 'Quicksand', sans-serif;
+*/
+
+#aboutme-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 96vw;
+  transition: all 0.25s ease-in-out;
+  color: rgb(194, 204, 212);
+  padding: 4rem 0;
+}
+
+.aboutme-scroll {
+  background-color: rgb(53, 54, 54);
+}
+
+#bio-image {
+  width: 200px;
+  border-radius: 1rem;
+}
+
+#bio-image-border {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 2rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  float: left;
+}
+
+#bio-container {
+  display: flex;
+  justify-content: center;
+  width: clamp(320px, 60vw, 1000px);
+}
+
+#bio-wrapper {
+  width: clamp(320px, 70%, 740px);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.bio-about {
+  text-align: justify;
+}
+
+#bio-about1 {
+  padding-top: 6rem;
+}
+
+#bio-about2 {
+  padding-top: 2rem;
+}
+
+#tech-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: clamp(320px, 60vw, 1000px);
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.tech-card {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(1);
+  transition: all 0.25s ease-in-out;
+}
+
+.tech-card:hover {
+  transform: scale(1.25);
+}
+
+.tech-icon {
+  width: 50px;
+}
+
+.tech-name {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 950px) {
+  #bio-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #bio-about1 {
+    padding-top: 2rem;
+  }
+}

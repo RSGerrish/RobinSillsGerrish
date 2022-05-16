@@ -58,7 +58,7 @@ const Lander = () => {
   const shapeHoriz = document.createElement('div');
   const shapeVert = document.createElement('div');
 
-  linkSeeMore.href = "#resume";
+  linkSeeMore.href = "#about";
   linkSeeMore.id = "see-more";
 
   btnTextRead.textContent = "READ";

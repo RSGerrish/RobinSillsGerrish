@@ -18,6 +18,8 @@ const Header = () => {
   const btnPortfolio = document.createElement('div');
   const linkResume = document.createElement('a');
   const btnResume = document.createElement('div');
+  const linkAbout = document.createElement('a');
+  const btnAbout = document.createElement('div');
 
   headerWrapper.id = "header-wrapper";
 
@@ -38,23 +40,33 @@ const Header = () => {
   
   linkContact.href = "#contact";
   linkContact.id = "link-contact";
+  linkContact.className = "nav-link";
   btnContact.className = "nav-button";
   btnContact.textContent = "Contact";
   linkContact.appendChild(btnContact);
 
   linkPortfolio.href = "#portfolio";
   linkPortfolio.id = "link-portfolio";
+  linkPortfolio.className = "nav-link";
   btnPortfolio.className = "nav-button";
   btnPortfolio.textContent = "Portfolio";
   linkPortfolio.appendChild(btnPortfolio);
 
   linkResume.href = "#resume";
   linkResume.id = "link-resume";
+  linkResume.className = "nav-link";
   btnResume.className = "nav-button";
   btnResume.textContent = "Resume";
   linkResume.appendChild(btnResume);
 
-  navContainer.append(linkResume, linkPortfolio, linkContact)
+  linkAbout.href = "#about";
+  linkAbout.id = "link-about";
+  linkAbout.className = "nav-link";
+  btnAbout.className = "nav-button";
+  btnAbout.textContent = "About";
+  linkAbout.appendChild(btnAbout);
+
+  navContainer.append(linkAbout, linkResume, linkPortfolio, linkContact)
 
   headerWrapper.append(logoContainer, msgContainer, navContainer);
 

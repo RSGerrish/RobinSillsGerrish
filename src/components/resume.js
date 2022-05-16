@@ -16,7 +16,7 @@ const Resume = () => {
   const summary3 = "Web Developer trained in HTML5, CSS3 and Javascript"
   const summary4 = "Additional experience in GitHub, Webpack with various plugins and SQL"
 
-  const skills = ['Full-Stack Development', 'Webpack', 'Github', 'Node.js', 'Express.js', 'React.js', 'jQuery', 'PHP', 'SQL'];
+  const skills = ['Full-Stack Development', 'Webpack', 'Git', 'npm', 'Jest', 'Node.js', 'Express', 'React', 'PHP'];
   
   const education1 = {
     sname: "The Odin Project",

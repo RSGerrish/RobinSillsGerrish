@@ -64,11 +64,13 @@ header.scroll {
   font-weight: 600;
   width:fit-content;
   margin-left: 1rem;
+  transition: all 0.25s ease-in-out;
 }
 
 #header-logo:hover {
   cursor: pointer;
   color: rgb(43, 108, 192);
+  transition: all 0.25s ease-in-out;
 }
 
 #nav-container {
@@ -85,11 +87,19 @@ header.scroll {
   font-weight: 600;
   color:rgb(218, 218, 224);
   margin-right: 1rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-button:hover{
   color:rgb(43, 108, 192);
   cursor:pointer;
+  transition: all 0.25s ease-in-out;
 }
 
 .nav-button:active {
@@ -106,7 +116,7 @@ a {
 }
 
 a:hover {
-  color:rgb(43, 108, 192);
+  color:rgb(89, 133, 190);
 }
 
 #site-container {
@@ -312,7 +322,7 @@ a:hover {
 #skills-wrapper {
   display: grid;
   grid-template: 1fr / repeat(9, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
@@ -443,6 +453,7 @@ a:hover {
   box-shadow: 0 0 1rem black;
   overflow: hidden;
   border-left: 2.3rem solid rgb(0, 0, 0);
+  background-position: 0 -1rem;
 }
 
 .port-card:hover {
@@ -494,8 +505,8 @@ a:hover {
 .port-directions {
   margin-bottom: 0;
   padding-bottom: 1rem;
-  font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
+  text-align: justify;
 }
 
 .port-git {
@@ -508,8 +519,8 @@ a:hover {
 }
 
 .port-desc {
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 200;
+  font-weight: 100;
+  text-align: justify;
 }
 
 @media (max-width: 1155px) {
@@ -531,22 +542,27 @@ a:hover {
   }
 
   .port-name {
-    margin-left: 15rem;
+    margin-left: 32%;
     transition: all 0.25s ease-in-out;
   }
 
   .port-git {
-    margin-left: 15rem;
+    margin-left: 32%;
     transition: all 0.25s ease-in-out;
   }
 
   .port-desc {
-    margin-left: 15rem;
+    margin-left: 32%;
     transition: all 0.25s ease-in-out;
   }
 
   .port-directions {
-    margin-left: 15rem;
+    margin-left: 32%;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .nav-button {
+    font-size: 1.5rem;
     transition: all 0.25s ease-in-out;
   }
 }
@@ -567,30 +583,45 @@ a:hover {
   .nav-button {
     font-size: 1.1rem;
     transition: all 0.25s linear;
+    margin-right: 0.5rem; 
+  }
+
+  .port-card {
+    border-left: none;
+    border-top: 2.3rem solid rgb(0, 0, 0);
+    background-position: -1rem 0rem;
+  }
+
+  .port-card:hover {
+    border-top: 2.3rem solid rgb(43, 108, 192);
+    border-left: none;
   }
 
   .port-gradient {
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(0.25turn, rgba(0, 0, 0, 1) 3%, rgba(255, 255, 255, 0), rgba(31, 31, 32, 1) 25%);
     transition: all 0.25s ease-in-out;
   }
 
   .port-name {
-    margin-left: 10rem;
+    margin-left: 30%;
     transition: all 0.25s ease-in-out;
   }
 
   .port-git {
-    margin-left: 10rem;
+    margin-left: 30%;
     transition: all 0.25s ease-in-out;
   }
 
   .port-desc {
-    margin-left: 10rem;
+    margin-left: 30%;
     transition: all 0.25s ease-in-out;
+
   }
 
   .port-directions {
-    margin-left: 10rem;
+    margin-left: 30%;
     transition: all 0.25s ease-in-out;
   }
 
@@ -629,11 +660,63 @@ a:hover {
   }
 }
 
+@media (max-width: 650px) {
+  .port-card {
+    border-left: none;
+    border-top: 2.3rem solid rgb(0, 0, 0);
+    background-position: -1rem, 0;
+  }
+
+  .port-card:hover {
+    border-top: 2.3rem solid rgb(43, 108, 192);
+    border-left: none;
+  }
+
+  .port-gradient {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0.5turn, rgba(0, 0, 0, 1) 3%, rgba(255, 255, 255, 0), rgba(31, 31, 32, 1) 25%);
+    transition: all 0.25s ease-in-out;
+  }
+
+  .port-name {
+    margin-left: 1rem;
+    margin-top: 35%;
+    padding-top: 0rem;
+    transition: all 0.25s ease-in-out;
+    padding-right: 0;
+    margin-right: 1rem;
+  }
+
+  .port-git {
+    margin-left: 1rem;
+    transition: all 0.25s ease-in-out;
+    max-width: 320px;
+    padding-right: 0;
+    margin-right: 1rem;
+  }
+
+  .port-desc {
+    margin-left: 1rem;
+    transition: all 0.25s ease-in-out;
+    padding-right: 0;
+    margin-right: 1rem;
+  }
+
+  .port-directions {
+    margin-left: 1rem;
+    transition: all 0.25s ease-in-out;
+    padding-right: 0;
+    margin-right: 1rem;
+  }
+}
+
 @media (max-width: 600px) {
   .nav-button {
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: all 0.25s linear;
     margin-right: 0;
+    padding-right: 0.5rem;
   }
 
   #lander-body {
@@ -649,32 +732,13 @@ a:hover {
 }
 
 @media (max-width: 500px) {
-  .port-name {
-    margin-left: 7rem;
-    transition: all 0.25s ease-in-out;
-  }
-
-  .port-git {
-    margin-left: 7rem;
-    transition: all 0.25s ease-in-out;
-  }
-
-  .port-desc {
-    margin-left: 7rem;
-    transition: all 0.25s ease-in-out;
-  }
-
-  .port-directions {
-    margin-left: 7rem;
-    transition: all 0.25s ease-in-out;
-  }
-
   .name-container {
     width: 100%;
   }
 
   .nav-button {
     padding-left: 0;
+    padding-right: 0.25rem;
   }
 }
 
