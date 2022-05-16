@@ -227,11 +227,11 @@ a:hover {
 #shape-vertical {
   position: absolute;
   background-color:rgb(70, 70, 75);
-  height: clamp(320px, 75vh, 670px);
+  height: clamp(500px, 70vw, 670px);
   width: clamp(7.25rem, 13vw, 9rem);
   z-index: 2;
   transform: translateY(-100vh);
-  animation: translate-down 1.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s 1 forwards;
+  animation: translate-down 1.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s 1 forwards;
 }
 
 #see-more {
@@ -241,7 +241,7 @@ a:hover {
   font-weight: 100;
   transform: translateY(-100vh) translateX(10rem);
   z-index: 9;
-  animation: translate-down 1s cubic-bezier(0.075, 0.82, 0.165, 1) 2s 1 forwards;
+  animation: translate-down 1.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s 1 forwards;
 }
 
 #btn-see-more {
