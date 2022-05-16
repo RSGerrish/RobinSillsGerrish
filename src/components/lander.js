@@ -35,25 +35,9 @@ const Lander = () => {
   lName.className = "name-ele";
   lNameContain.appendChild(lName);
 
-  const nameBD1 = document.createElement('div');
-  const nameBD2 = document.createElement('div');
-  const nameBD3 = document.createElement('div');
-
-  nameBD1.id = "name-bd1";
-  nameBD1.className = "back-drop";
-  nameBD1.textContent = "Hello!";
-
-  nameBD2.id = "name-bd2";
-  nameBD2.className = "back-drop";
-  nameBD2.textContent = "My name"
-
-  nameBD3.id = "name-bd3";
-  nameBD3.className = "back-drop";
-  nameBD3.textContent = "is...";
-
   nameWrapper.id = "name-wrapper";
 
-  nameWrapper.append(fNameContain, mNameContain, lNameContain, nameBD1, nameBD2, nameBD3);
+  nameWrapper.append(fNameContain, mNameContain, lNameContain);
 
   const aboutTitle = document.createElement('div');
   const aboutText = document.createElement('div');

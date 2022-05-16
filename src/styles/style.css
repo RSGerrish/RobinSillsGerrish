@@ -178,30 +178,6 @@ a:hover {
   z-index: 9;
 }
 
-.back-drop {
-  position: absolute;
-  min-height: 10rem;
-  width: clamp(320px, 60vw, 1000px);
-  color:rgb(70, 70, 75);
-  z-index: 5;
-  text-align: center;
-  font-size: clamp(3rem, calc(100vw / 15), 8rem);
-  font-weight: 200;
-  animation: hide-element 1.5s linear 1s 1 forwards;
-}
-
-#name-bd1 {
-  transform: translateY(-30rem);
-}
-
-#name-bd2 {
-  transform: translateY(-20rem);
-}
-
-#name-bd3 {
-  transform: translateY(-10rem);
-}
-
 #about-text {
   position: absolute;
   width: clamp(345px, 60vw, 1000px);
