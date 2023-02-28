@@ -1,5 +1,12 @@
 const Portfolio = () => {
   const portfolio = [{
+    name: 'CV Creator',
+    url: 'https://cv-project-ten.vercel.app/',
+    git: 'https://github.com/RSGerrish/cv-project',
+    description: "Built fully in React Native using the MERN stack, this project displays use of React Context and Authorization. This is a tool I currently use. A revisit is planned to add features for saving as PDF and directly printing CV's from the app.",
+    directions: "This marks the last personal project before utilizing a React UI library. While I love having full control of how my components function, they always lack the pizazz that can easily be achieved using a UI library like NextUI or MaterialUI. \n** Please give the site time to load. The free server hosting may take up to 15-20 seconds to load data or allow for login authentication.",
+    },
+    {
       name: 'Memory Card Game',
       url: 'https://rsgerrish.github.io/memory-card-game/',
       git: 'https://github.com/RSGerrish/memory-card-game',
@@ -17,7 +24,7 @@ const Portfolio = () => {
       name: 'Chek List',
       url: 'https://rsgerrish.github.io/todo-project/',
       git: 'https://github.com/RSGerrish/todo-project',
-      description: 'A To Do List App. I had a really good time with this one as I managed to get it all done with minimal help from examples and mostly from my own research and problem solving. The palette is crap, however I am proud of the layout and overall design. I will be revisiting this to add a firebase datase allowing for persistence between sessions. I will also be updating the palette.',
+      description: 'A To Do List App. I had a really good time with this one as I managed to get it all done with minimal help from examples and mostly from my own research and problem solving. The palette is crap, however I am proud of the layout and overall design. I will be revisiting this to add a firebase database allowing for persistence between sessions. I will also be updating the palette.',
       directions: 'Just like the other million todo apps aspiring web developers have done, you can add a project on the left, and then add tasks for projects.'
     },
     {
@@ -26,13 +33,6 @@ const Portfolio = () => {
       git: 'https://github.com/RSGerrish/restaurant-project',
       description: 'This was an early project I worked on, however I believe its purpose was to get me familiar with Webpack which is currently part of my preferred technology stack, as long as it makes sense of course. The assignment was to create a fake restaurant website, however I redesigned a website for a pizza shop owned by a friend. You can check out their current site at https://originalmamaspizza.com/. Who knows, maybe this project will become a paid gig someday!',
       directions: 'This site is not fully responsive and the layout breaks at smaller resolutions. I plan to revisit this one to make a mobile layout of the site which will be displayed via Javascript when the apps width goes below a certain width.',
-    },
-    {
-      name: 'Weather App',
-      url: 'https://rsgerrish.github.io/weather-app/',
-      git: 'https://github.com/RSGerrish/weather-app',
-      description: "The purpose of this project was to get familiar using an API, promises and async/await functions. Specifically, I used the OpenWeather API to retrieve and display current weather info.",
-      directions: "I reluctantly put this on my Portfolio, but only because I am not sure how the sunrise and sunset times will display for anyone outside of the US Eastern timezone. While I could certainly work this issue out, I did not want to get bogged down with a detail that really wasn't the focus of the exercise.",
     }
   ] 
 

@@ -101,11 +101,11 @@ const AboutMe = () => {
 
   bioImageBorder.appendChild(bioImage);
 
-  bioAbout1.textContent = "Since discovering VB3 at the age of 14, I have since always enjoyed programming and simply getting things to work. While I ultimately took a different route for my career path up to this point, I've realized that my heart truly lies in programming and development. Through working on various passion projects over the years, I have developed a bit of experience using languages like C#, PHP and SQL. Most recently I've directed my focus to Full Stack Web Development and am absolutely loving it.";
+  bioAbout1.textContent = "Since discovering VB3 at the age of 14, I have since always enjoyed programming and simply getting things to work. While I ultimately took a different route for my career path up to this point, I've realized that my heart truly lies in programming and development. Through working on various passion projects over the years, I have developed a bit of experience using languages like C#, PHP and SQL. Over recent years, I've directed my focus to Full Stack Web Development focusing in React and the MERN stack.";
   bioAbout1.id = "bio-about1";
   bioAbout1.className = "bio-about";
 
-  bioAbout2.textContent = "My high adaptability, drive to learn, and passion for coding are all traits that will contribute to my success as a professional web developer. Please be sure to check out my portfolio below!";
+  bioAbout2.textContent = "My high adaptability, drive to learn, and passion for coding are all traits that will contribute to my success as a software engineer. Please be sure to check out my portfolio below!";
   bioAbout2.id = "bio-about2";
   bioAbout2.className = "bio-about";
 

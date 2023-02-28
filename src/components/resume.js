@@ -32,32 +32,39 @@ const Resume = () => {
   }
 
   const experience1 = {
+    pname: "Sales Engineer and Project Manager",
+    cname: "Symmetrix Composite Tooling",
+    dates: "July 2022 - Dec 2022",
+    desc: "Responsibilities include but are not limited to managing projects from quoting to shipping, providing customer support such as direct customer visits, in-person inspections of customer tools, consultation on optimal pattern/mold construction for a wide variety of processes and conditions."
+  }
+
+  const experience2 = {
     pname: "Composite Fabricator",
     cname: "Composite Resources",
     dates: "Jan 2021 - Mar 2022",
     desc: "Responsibilities include composite fabrication, manual machining, and handling occasional research and development projects"
   }
 
-  const experience2 = {
+  const experience3 = {
     pname: "Inventory Manager",
     cname: "Multimatic Inc.",
     dates: "May 2019 - May 2020",
     desc: "Responsibilities include customer support, inventory management of all in-house GT3 and GT4 OEM parts for the US customer suppport program, and occasional travel to race events"
   }
 
-  const experience3 = {
+  const experience4 = {
     pname: "Project Engineer",
     cname: "Composite Resources",
     dates: "May 2018 - May 2019",
-    desc: "Project Engineer with focus in quoting potential work and designing composite parts"
+    desc: "Project Engineer with focus in quoting potential work and designing molding to produce customer designed composite components. Focus in prepreg autoclave CF layup."
   }
 
-  const experience4 = {
-    pname: "Purchaser",
-    cname: "Riley Technologies",
-    dates: "Dec 2016 - May 2018",
-    desc: "Responsibilities include but are not limited to sourcing materials, creating and submitting purchase orders, receiving inventory, maintaining inventory, creating and editing BOM's and occasionaly traveling to race events"
-  }
+  // const experience4 = {
+  //   pname: "Purchaser",
+  //   cname: "Riley Technologies",
+  //   dates: "Dec 2016 - May 2018",
+  //   desc: "Responsibilities include but are not limited to sourcing materials, creating and submitting purchase orders, receiving inventory, maintaining inventory, creating and editing BOM's and occasionaly traveling to race events"
+  // }
 
   const resumeEle = document.createElement('div');
 
